@@ -1,5 +1,7 @@
 ![test](https://github.com/mojganghodsi/CSMS/blob/master/.github/workflows/ci.yml/badge.svg?event=push)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![last commit](https://img.shields.io/github/last-commit/mojganghodsi/CSMS)]
+
 # CSMS
 
 CSMS (charging station management system) is used to manage charging stations, charging
@@ -12,6 +14,15 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 things you need to install the software and how to install them
+Requirements
+```
+Linux, Mac OS or Windows
+```
+```
+
+Java 8+
+```
+
 
 ```
 an examples
@@ -69,10 +80,11 @@ Add additional notes about how to deploy this on a live system
 ## Authors
 
 * **Mojgan Ghodsi** - *other repositories* - [Mojgan Ghodsi](https://github.com/mojganghodsi)
+* contact: [Mojgan Ghodsi](zahraghodsi.w@gmail.com)
 
 ## License
 
-This project is licensed under the Apache-2.0 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache-2.0 License
 
 ## Acknowledgments
 
