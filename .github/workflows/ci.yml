@@ -24,7 +24,10 @@ jobs:
  
     - name: Build
       run: mvn --batch-mode -DskipTests package
-
+      
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      
     - name: Test
       run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
 
