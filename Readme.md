@@ -66,7 +66,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Mojgan Ghodsi** - *Initial work* - [Mojgan Ghodsi](https://github.com/mojgnghodsi)
+* **Mojgan Ghodsi** - *other repositories* - [Mojgan Ghodsi](https://github.com/mojganghodsi)
 
 ## License
 
