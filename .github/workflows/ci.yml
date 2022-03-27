@@ -29,7 +29,8 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       
     - name: Test
-      run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
+     # run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
+      run: mvn --batch-mode test
 
     - name: Report
       uses: dorny/test-reporter@v1
