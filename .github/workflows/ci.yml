@@ -40,26 +40,18 @@ jobs:
         reporter: java-junit
         fail-on-error: true
         
-    #- name: generating code coverage xml report
-     # run: mvn cobertura:cobertura
+    - name: generating code coverage xml report
+      run: mvn cobertura:cobertura
       
-   # - name: download uploader for code Coverage
-    #  run: curl -Os https://uploader.codecov.io/latest/linux/codecov
+    - name: download uploader for code Coverage
+      run: curl -Os https://uploader.codecov.io/latest/linux/codecov
       
-   # - name: change permission  
-    #  run: chmod +x codecov
+    - name: change permission  
+      run: chmod +x codecov
       
-    #- name: run codecov
-     # run: ./codecov
-      
-    - name: Install remaining dependencies
-      run: lein deps
-    - name: Check formatting
-      run: lein cljfmt check
-    - name: Run tests
-      run: lein test
-    - name: Generate coverage report
-      run: lein cloverage --codecov
+    - name: run codecov
+      run: ./codecov
+
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
 
