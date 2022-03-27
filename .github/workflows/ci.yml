@@ -39,4 +39,13 @@ jobs:
         path: target/surefire-reports/*.xml
         reporter: java-junit
         fail-on-error: true
+        
+    - name: download uploader for code Coverage
+      run: curl -Os https://uploader.codecov.io/latest/linux/codecov
+      
+    - name: change permission  
+      run: chmod +x codecov
+      
+    - name: run codecov
+      run: ./codecov
 
