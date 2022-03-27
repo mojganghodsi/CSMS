@@ -40,6 +40,9 @@ jobs:
         reporter: java-junit
         fail-on-error: true
         
+    - name: generating code coverage xml report
+      run: mvn cobertura:cobertura
+      
     - name: download uploader for code Coverage
       run: curl -Os https://uploader.codecov.io/latest/linux/codecov
       
