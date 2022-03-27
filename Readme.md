@@ -1,5 +1,5 @@
-![test](https://github.com/mojganghodsi/CSMS/blob/master/.github/workflows/ci.yml/badge.svg)
-
+![test](https://github.com/mojganghodsi/CSMS/blob/master/.github/workflows/ci.yml/badge.svg?event=push)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 # CSMS
 
 CSMS (charging station management system) is used to manage charging stations, charging
