@@ -1,7 +1,4 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
-name: Java CI with Maven
+name: CI with Maven and Docker Image
 
 on:
   push:
@@ -27,6 +24,9 @@ jobs:
  
     - name: Build
       run: mvn --batch-mode -DskipTests package
+      
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag csms:$(date +%s)
 
     - name: Test
       run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
@@ -39,6 +39,4 @@ jobs:
         path: target/surefire-reports/*.xml
         reporter: java-junit
         fail-on-error: true
-        
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag csms:$(date +%s)
+
