@@ -1,7 +1,7 @@
 # CSMS
 
 CSMS (charging station management system) is used to manage charging stations, charging
-processes and customers (eDrivers) amongst other things. One of functionalities of such a CSMS is to calculate a price to a particular charging process so that the eDriver can be invoiced for the consumed services which is implemented here. Establishing a price for a charging process is usually done by applying a rate to the CDR (charge detail record) of the corresponding charging process.
+processes and customers (eDrivers) amongst other things. One of functionalities of such a CSMS is to calculate a price to a particular charging process so that the eDriver can be invoiced for the consumed services which is implemented here.
 
 ## Getting Started
 
