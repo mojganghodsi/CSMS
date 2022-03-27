@@ -39,3 +39,6 @@ jobs:
         path: target/surefire-reports/*.xml
         reporter: java-junit
         fail-on-error: true
+        
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag csms:$(date +%s)
