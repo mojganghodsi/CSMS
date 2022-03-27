@@ -23,6 +23,7 @@ public class TimeApplicator extends RateApplicator implements TransactionTimeCal
                 Double timeRate = chargingProcessInput.getRate().getTime();
                 Double timeComponent = Math.round(transactionTime * timeRate * 1000.0) / 1000.0;
                 chargingProcessOutput.setTimeComponent(timeComponent);
+                addPriceToOverAllPrice(chargingProcessOutput,timeComponent);
             }
         return checkNext(chargingProcessInput,chargingProcessOutput);
     }

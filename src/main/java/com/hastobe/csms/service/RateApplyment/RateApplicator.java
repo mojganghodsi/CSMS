@@ -43,4 +43,18 @@ public abstract class RateApplicator {
         return next.apply(chargingProcessInput, chargingProcessOutput);
     }
 
+    /***
+     * add calculated price in the node to overall price
+     * If it is the last node, calculate final overall in 2 floating point
+     * @param chargingProcessOutput
+     * @param inputPrice
+     */
+    void addPriceToOverAllPrice(ChargingProcessOutput chargingProcessOutput, Double inputPrice){
+        if (next == null) {
+            Double overall = chargingProcessOutput.getOverall() + inputPrice;
+            chargingProcessOutput.setOverall(Math.round(overall * 100.0) / 100.0);
+        }
+        else
+            chargingProcessOutput.setOverall(chargingProcessOutput.getOverall() + inputPrice);
+    }
 }

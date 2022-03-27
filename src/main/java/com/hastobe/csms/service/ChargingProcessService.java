@@ -26,7 +26,6 @@ public class ChargingProcessService {
     /***
      * charge process
      * Implemented chain of responsibility pattern to apply the rate on CDR
-     * calculate overall price
      * @param chargingProcessInput
      * @return ChargingProcessOutput
      */
@@ -38,14 +37,7 @@ public class ChargingProcessService {
         energyApplicator.linkWith(timeApplicator);
         timeApplicator.linkWith(transactionApplicator);
         energyApplicator.apply(chargingProcessInput,chargingProcessOutput);
-        calculateOverallPrice(chargingProcessOutput);
         return chargingProcessOutput;
     }
 
-    void calculateOverallPrice(ChargingProcessOutput chargingProcessOutput){
-        Double overallPrice = chargingProcessOutput.getComponents().getEnergy() +
-                chargingProcessOutput.getComponents().getTime() +
-                chargingProcessOutput.getComponents().getTransaction();
-        chargingProcessOutput.setOverall(Math.round(overallPrice * 100.0) / 100.0);
-    }
 }

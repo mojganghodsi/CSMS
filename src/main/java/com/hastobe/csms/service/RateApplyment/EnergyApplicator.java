@@ -22,6 +22,7 @@ public class EnergyApplicator extends RateApplicator implements ConsumedEnergyCa
                 Double energyRate = chargingProcessInput.getRate().getEnergy();
                 Double energyComponent = Math.round(consumedEnergy * energyRate * 1000.0) / 1000.0;
                 chargingProcessOutput.setEnergyComponent(energyComponent);
+                addPriceToOverAllPrice(chargingProcessOutput,energyComponent);
             }
         return checkNext(chargingProcessInput,chargingProcessOutput);
     }

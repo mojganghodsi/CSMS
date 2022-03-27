@@ -28,7 +28,7 @@ public class ChargingProcessServiceTest implements DateConverter {
     }
 
     @Test
-    void ChargingProcessTest(){
+    void ChargingProcessTest() throws Exception{
         Rate rate = new Rate(0.3,2.0,1.0);
         CDR cdr = new CDR(1204307L, stringToDate("2021-04-05T10:04:00Z"),1215230L, stringToDate("2021-04-05T11:27:00Z"));
         ChargingProcessInput chargingProcessInput = new ChargingProcessInput(rate,cdr);

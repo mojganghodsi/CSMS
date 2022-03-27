@@ -19,6 +19,7 @@ public class TransactionApplicator extends RateApplicator {
             if (chargingProcessInput.getRate().getTransaction()!=null){
                 Double transactionComponent = chargingProcessInput.getRate().getTransaction();
                 chargingProcessOutput.setTransactionComponent(transactionComponent);
+                addPriceToOverAllPrice(chargingProcessOutput,transactionComponent);
             }
         return checkNext(chargingProcessInput,chargingProcessOutput);
     }

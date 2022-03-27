@@ -3,7 +3,7 @@ package com.hastobe.csms.model;
 import java.io.Serializable;
 
 public class ChargingProcessOutput implements Serializable {
-    private Double overall;
+    private Double overall = 0.0;
     private Components components = new Components();
 
     public ChargingProcessOutput() {
