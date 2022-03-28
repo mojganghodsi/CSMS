@@ -53,7 +53,7 @@ public class ChargingAPITest implements DateConverter, JsonMapper{
                 "\"components\": { \"energy\": 3.277, \"time\": 2.767, \"transaction\": 1 }\n" +
                 "}";
         Mockito.when(chargingProcessService.charge(Mockito.any())).thenReturn(chargingProcessOutput);
-        RequestBuilder requestBuilder = MockMvcRequestBuilders.post("/charging/charge").content(stringInput).contentType(MediaType.APPLICATION_JSON_VALUE);
+        RequestBuilder requestBuilder = MockMvcRequestBuilders.post("/chargeprocess/charge").content(stringInput).contentType(MediaType.APPLICATION_JSON_VALUE);
         MvcResult result = mvc.perform(requestBuilder).andReturn();
         /*
         in case of equal assertion for objects
