@@ -67,7 +67,7 @@ CI is provided by GitHub action, so to see every thing about run tests you can g
 
 In last commit all the tests were successfully passed, and in my IDEA, tests were run by 92% code coverage.
 
-you also can generate code coverage report by runing mvn test, and see the html report under target,site, jacoco directory.
+you also can generate code coverage report by runing mvn test, and see the html report under target, site, jacoco directory.
 
 ## Deployment
 
