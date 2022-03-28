@@ -58,7 +58,7 @@ java -jar <your .jar file name>
 
 Here there is no need to use any web server like tomcat, Spring boot will take care of that with it's embeded web server.
 
-Now you can access the api using swagger: [APIs](http://localhost:8080/csms-api/swagger-ui.html#/)
+Now you can access the api using swagger ui: [APIs](http://localhost:8080/csms-api/swagger-ui.html#/)
 
 You successfully insalled the minimal requirements and deployed the app on your system.
 
