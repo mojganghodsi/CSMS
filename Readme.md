@@ -19,6 +19,7 @@ processes and customers (eDrivers) amongst other things. One of functionalities 
 - [Run the tests](#run-the-tests)
 - [Deployment](#deployment)
 - [Built With](#built-with)
+- [Challenge 2](#challenge-2)
 - [License](#license)
 - [Author](#author)
 - [note](#note)
@@ -103,6 +104,13 @@ Now you can see the API using the previous called [swagger ui console](http://lo
 * [Docker](https://www.docker.com/) - containerizing engine
 * [jacoco](https://www.jacoco.org/jacoco/trunk/index.html) - code coverage library for java
 
+## Challenge 2
+Base on my brief knowledge on the domain, these improvment comes handy, of course with more undrestanding on bussiness domain and costumer, APIs design can improved more accuretly.
+* Better Documentation
+* Versioning API
+* Handeling error more acuretly, descriptive error message
+* Authenticating with username and password and using private access tokens
+* Implementing a rate-limit that gives the users an indication on how to use the API properly by recommending a maximum number of requests for a given time interval, And also prevents DDoS
 ## Author
 
 * **Mojgan Ghodsi** - *other repositories* - [Mojgan Ghodsi](https://github.com/mojganghodsi)
