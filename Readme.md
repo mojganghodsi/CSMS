@@ -32,9 +32,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Minimal Requirements
 
-*Linux, Mac OS or Windows
-*Java 8+
-*Maven
+* Linux, Mac OS or Windows
+* Java 8+
+* Maven
 
 ### Install
 
