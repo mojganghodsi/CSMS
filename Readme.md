@@ -29,18 +29,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Minimal Requirements
 
-things you need to install the software and how to install them
-Requirements
-```
-Linux, Mac OS or Windows
-```
-```
-Java 8+
-```
-```
-Maven
-```
-
+*Linux, Mac OS or Windows
+*Java 8+
+*Maven
 
 ### Install
 
@@ -66,27 +57,37 @@ Here there is no need to use any web server like tomcat, Spring boot will take c
 
 Now you can access the api using swagger: [APIs](http://localhost:8080/csms-api/swagger-ui.html#/)
 
+You successfully insalled the minimal requirements and deployed the app on your system.
+
 ## Run the tests
 
-ci is provided by GitHub action, so to see every thing about run tests you can go under actions tab, latest workflow. Also You can re-run the workflow to run the script manually. consider that ci.yml will run aftter each push.
+CI is provided by GitHub action, so to see every thing about run tests you can go under actions tab, latest workflow. Also You can re-run the workflow to run the script manually. consider that ci.yml will run aftter each push.
 
 In last commit all the tests were successfully passed, and in my IDEA, tests were run by 92% code coverage.
 
 ## Deployment
 
-Docker image is built, by running the ci.yaml script.It will be done automaticaly with each push on repository. Self-host option is available for future deployment cases.
+Docker image is built, by running the ci.yaml script. It will be done automaticaly with each push on repository. Self-host option is available for future deployment cases.
 
 
 Here we see minimal instruction to deploy containerized app on ubuntu:
 
-make sure if docker is installed and the service is up and running on your system. Go to the project directory and run this command to build the docker image:
+Make sure if docker is installed and the service is up and running on your system. Go to the project directory and run these command to build the docker image:
+```
+mvn clean install
+```
 ```
 docker build . --file Dockerfile --tag <image name>:$(date +%s)
 ```
-Then run the image and map 8080 port of host to 8080 port of the container:
+Find the image name:
 ```
-
+docker images
 ```
+Then run the image and map desired port of host to 8080 port of the container:
+```
+docker run -p 8080:8080 <image name>
+```
+Now you can see the API using the previous called [swagger ui console](http://localhost:8080/csms-api/swagger-ui.html#/) or access API with it's path on your system.
 
 
 ## Built With
@@ -103,4 +104,8 @@ Then run the image and map 8080 port of host to 8080 port of the container:
 ## License
 
 This project is licensed under the Apache-2.0 License
+
+
+## note
+please feel free to contact me for any question, email: zahraghodsi.w@gmail.com
 
