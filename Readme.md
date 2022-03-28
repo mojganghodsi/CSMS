@@ -19,8 +19,10 @@ processes and customers (eDrivers) amongst other things. One of functionalities 
 - [Run the tests](#run-the-tests)
 - [Deployment](#deployment)
 - [Built With](#built-with)
-- [Author](#author)
 - [License](#license)
+- [Author](#author)
+- [note](#note)
+
 
 
 ## Getting Started
