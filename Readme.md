@@ -2,9 +2,9 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![last commit](https://img.shields.io/github/last-commit/mojganghodsi/CSMS)
 ![goto counter](https://img.shields.io/github/search/mojganghodsi/CSMS/goto)
+![coverage](https://img.shields.io/codecov/c/github/mojganghodsi/CSMS)
 <!--
 ![build](https://img.shields.io/github/workflow/status/mojganghodsi/CSMS/ci)
-![coverage](https://img.shields.io/codecov/c/github/mojganghodsi/CSMS)
 -->
 # CSMS
 
