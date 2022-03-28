@@ -79,6 +79,16 @@ Docker image is built, by running the ci.yaml script.It will be done automatical
 
 Here we see minimal instruction to deploy containerized app on ubuntu:
 
+make sure if docker is installed and the service is up and running on your system. Go to the project directory and run this command to build the docker image:
+```
+docker build . --file Dockerfile --tag <image name>:$(date +%s)
+```
+Then run the image and map 8080 port of host to 8080 port of the container:
+```
+
+```
+
+
 ## Built With
 
 * [Java](https://www.java.com/en/) - The language used
