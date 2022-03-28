@@ -67,6 +67,8 @@ CI is provided by GitHub action, so to see every thing about run tests you can g
 
 In last commit all the tests were successfully passed, and in my IDEA, tests were run by 92% code coverage.
 
+you also can generate code coverage report by runing mvn test, and see the html report under target,site, jacoco directory.
+
 ## Deployment
 
 Docker image is built, by running the ci.yaml script. It will be done automaticaly with each push on repository. Self-host option is available for future deployment cases.
@@ -98,6 +100,8 @@ Now you can see the API using the previous called [swagger ui console](http://lo
 * [Spring Framework](https://spring.io/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [JUnit](https://junit.org/) - Unit testing frameework
+* [Docker](https://www.docker.com/) - containerizing engine
+* [jacoco](https://www.jacoco.org/jacoco/trunk/index.html) - code coverage library for java
 
 ## Author
 
