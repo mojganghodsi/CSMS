@@ -35,8 +35,9 @@ public class ChargingProcessController {
      */
     @ApiOperation(value = "start the charging process", response = Iterable.class, tags = "charge")
     @RequestMapping(value = "/charge", method = RequestMethod.POST)
-    public ResponseEntity<ChargingProcessOutput> charge(@RequestBody ChargingProcessInput chargingProcessInput) {
+    public ResponseEntity charge(@RequestBody ChargingProcessInput chargingProcessInput) {
         ChargingProcessOutput chargingProcessOutput =  chargingProcessService.charge(chargingProcessInput);
         return ResponseEntity.status(HttpStatus.OK).body(chargingProcessOutput);
+        //return ResponseHandler.generateResponse ("Charging process successfully finished!",HttpStatus.OK,chargingProcessOutput);
         }
 }
